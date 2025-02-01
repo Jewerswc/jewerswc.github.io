@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protected Blog</title>
+  <link rel="stylesheet" href="mystyle.css" />
+</head>
+<body>
+  <div id="content" style="display:none;">
+    <!-- Your blog content or blog container goes here -->
+    <h1>Welcome to my Blog!</h1>
+    <!-- You can include your Jekyll-generated posts here -->
+  </div>
+  <script>
+    // Very simple client-side password prompt
+    const correctPassword = "yourSecretCode";  // change this to your desired code
+    let userPassword = prompt("Please enter the password to access this page:");
+    if (userPassword === correctPassword) {
+      document.getElementById("content").style.display = "block";
+    } else {
+      document.body.innerHTML = "<h2>Access Denied</h2>";
+    }
+  </script>
+</body>
+</html>
