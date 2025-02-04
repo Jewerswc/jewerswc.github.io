@@ -284,3 +284,25 @@ pre {
 .social-icons a:hover {
   color: #007bff; /* Change color on hover */
 }
+
+
+.blog {
+  width: 800px; /* Overrides the global width only for blog pages */
+  margin: 0 auto;
+}
+
+/* Adjust font styling only for the blog */
+.blog body,
+.blog p,
+.blog h1,
+.blog h2,
+.blog h3 {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* You can specify any additional font styles here */
+}
+
+/* For example, if you want a larger font size for paragraphs in the blog: */
+.blog p {
+  font: 16px/1.6 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
