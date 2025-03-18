@@ -77,7 +77,6 @@ header {
   width: 270px;
   padding: 20px;
   background: #fff;
-  border-right: 1px solid #e5e5e5;
   min-height: 100vh; /* Make it stretch full page height */
 }
 
