@@ -1,0 +1,137 @@
+/* Load the Lato font */
+@import url("https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700");
+
+/* Base Reset/Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font: 14px/1.5 "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777;
+  background-color: #fff;
+  padding: 20px; /* Adjust padding around the entire page */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+h1 { font-size: 28px; line-height: 1.1; }
+h2 { font-size: 24px; color: #393939; line-height: 1.2; }
+h3 { font-size: 20px; color: #494949; line-height: 1.3; }
+
+/* Paragraphs, lists, etc. */
+p, ul, ol, table, pre, dl {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+/* Links */
+a {
+  color: #39c;
+  text-decoration: none;
+  font-weight: 400;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code blocks */
+code, pre {
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #333;
+  font-size: 12px;
+}
+pre {
+  background: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 8px 15px;
+  overflow-x: auto;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #e5e5e5;
+  padding-left: 15px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header / Sidebar (Fixed Left) */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  padding: 20px;
+  background: #fff;
+  border-right: 1px solid #e5e5e5;
+  min-height: 100vh; /* Make it stretch full page height */
+}
+
+/* Navigation inside header */
+header ul {
+  list-style: none;
+  margin-top: 20px;
+}
+header li {
+  margin-bottom: 10px;
+}
+header li a {
+  font-size: 14px;
+  color: #555;
+  display: block;
+}
+
+/* Main Blog Content Area */
+.blog-content {
+  /* Leaves space for the sidebar + a little extra */
+  margin-left: 300px;
+  /* Control the maximum width of your text column */
+  max-width: 600px;
+  /* Center the content horizontally if the screen is wider than 600px + 300px sidebar */
+  margin-right: auto;
+  /* Optional: top/bottom padding for breathing room */
+  padding: 20px 0;
+}
+
+/* Footer (optional) */
+footer {
+  text-align: center;
+  margin: 40px 0;
+  color: #999;
+  font-size: 12px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+  header {
+    position: static; /* Let header scroll normally */
+    width: auto;
+    min-height: auto;
+    border-right: none;
+  }
+  .blog-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+}
