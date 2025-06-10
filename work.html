@@ -1,66 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>William Jewers</title>
 
-  <!-- Style.css and Github light -->
-  <link rel="stylesheet" href="mystyle.css">
-  <link rel="stylesheet" href="github-light.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- FontAwesome for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <!-- Minimal “Koomen” CSS -->
+  <style>
+    /* — base reset & typography — */
+    body {
+      margin: 0;
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #111;
+      line-height: 1.6;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* — layout container — */
+    .container {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    /* — header — */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-family: Menlo, Monaco, "Courier New", monospace;
+      font-size: 1.4rem;
+      font-weight: normal;
+      margin: 0;
+    }
+    nav a {
+      margin-left: 1rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .social-icons a {
+      margin-left: 0.75rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    /* — section titles & text — */
+    main h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 0;
+    }
+    main h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin: 0.5rem 0 1rem 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* — footer — */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 4rem;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="wrapper">
+  <div class="container">
     <header>
-      <h1>William Jewers</h1>
-      <!-- <p>Strategy Consultant</p> -->
-      <h3><p class="view"><a href="https://jewerswc.github.io/home.html">Home</a></p></h3>
-      <h3><p class="view"><a href="https://jewerswc.github.io/work.html">About</a></p></h3>
-      <h3><p class="view"><a href="https://jewerswc.github.io/blog.html">Blog</a></p></h3>
-
-
-      <br>
+      <div>
+        <h1>William Jewers</h1>
+        <nav>
+          <a href="https://jewerswc.github.io/home.html">Home</a>
+          <a href="https://jewerswc.github.io/work.html">About</a>
+          <a href="https://jewerswc.github.io/blog.html">Blog</a>
+        </nav>
+      </div>
+      <div class="social-icons">
+        <a href="https://twitter.com/WilliamJewers" target="_blank">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/williamcjewers" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/jewerswc" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:william.jewers@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
     </header>
 
-    <section>
-      <br>
-        <h2>What I do/what I've done:</h2>
-        <h3>What I do</h3>
-     
-          <p>I'm building<a href="https://www.interestingornot.com"> Interesting Or Not</a>, which is the place where AI personas write, create content, and do things. It places users 'in the loop' by adapting LLMs to reader feedback and engagement.</p>
-           <p>All the content is LLM generated and iterated by human inputs.</p>
-          <p>I recently took part in Durham University's Venture Lab Startup Accelerator program [Jul-Sep 2024]. I received £2,500 in grant funding towards Interesting Or Not from this.</p>
-            <p>If you're interested in this, please reach out to me via: william-jewers@interestingornot.com.</p>
-      
-            <h3>What I've done</h3>
-      
-            <p>I've also been involved in UK politics, previously working in the House of Commons as a researcher from the ages of 18 to 24. During that time, I contributed to this paper <a href="https://cdn.prod.website-files.com/66e290977b0f17041797e6ae/66fb3a4aa6d5bf17f7481ed1_Conservatism%20in%20Crisis.pdf"> Conservatism in Crisis: Rise of the Bureaucratic Class.</a> </p>
-            <p>I have an undergraduate degree (BA) in philosophy and politics (2023, Durham, UK). During that time, among other things, I wrote this paper on how Edmund Burke uses language: <a href="https://jewerswc.github.io/Burke.html">Burke's Three Doctrines And The French English Question Of Reflections.</a></p>
-            <p>I also taught myself to code at university. I've built various things since, which have included: </p>    
-<ul>
-  <li>A News Classification site from<a href="https://x.com/paulg/status/1750493486397190617"> an idea by Paul Graham.</a></li>
-  <li>A flood map for my previous job to locate flooded properties within the flood risk zones.</li>
-  <li><a href="https://github.com/Jewerswc/Booksorter">A python tool to classify my unread books</a> based on whether I'll be likely to read it (given books I've already read).</li>
+    <main>
+      <h2>What I do / What I’ve done:</h2>
 
-</ul>
-<p>You can find the rest of my repositories via the github widget below.</p>    
+      <h3>What I do</h3>
+      <p>
+        I’m building
+        <a href="https://www.interestingornot.com" target="_blank"
+          >Polyspark</a
+        >, an AI blogging platform where anyone can create AI personas that publish posts, driven by their system prompts.
+      </p>
+      <p>
+        I recently completed Durham University’s Venture Lab accelerator (Jul–
+        Sep 2024), receiving £2,500 in grant funding for Polyspark (fka Interesting Or Not).
+      </p>
+      <p>
 
-    </section>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/williamcjewers" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/jewerswc" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://twitter.com/WilliamJewers" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="mailto:william.jewers@gmail.com"><i class="far fa-envelope"></i></a>
-    </div>
+      </p>
+
+      <h3>What I’ve done</h3>
+      <p>Before I got interested in startups and coding, I did some other things.</p>
+
+      <p>
+        From 18–24 I worked in the UK House of Commons as a researcher, and among other things, I
+        contributed to this paper:
+        <a
+          href="https://cdn.prod.website-files.com/66e290977b0f17041797e6ae/66fb3a4aa6d5bf17f7481ed1_Conservatism%20in%20Crisis.pdf"
+          target="_blank"
+          >Conservatism in Crisis: Rise of the Bureaucratic Class</a
+        >.
+      </p>
+      <p>
+        I hold a BA in Philosophy & Politics (Durham ’23). During my degree I
+        analysed Edmund Burke’s rhetoric in
+        <a
+          href="https://jewerswc.github.io/Burke.html"
+          target="_blank"
+          >Burke’s Three Doctrines And The French English Question Of Reflections</a
+        >.
+      </p>
+      <p>I’ve also taught myself to code and built:</p>
+      <ul>
+        <li>
+          A news-classification site inspired by
+          <a href="https://x.com/paulg/status/1750493486397190617" target="_blank"
+            >Paul Graham’s idea</a
+          >.
+        </li>
+        <li>
+          A flood-zone mapping tool to locate at-risk properties.
+        </li>
+        <li>
+          <a
+            href="https://github.com/Jewerswc/Booksorter"
+            target="_blank"
+            >Booksorter</a
+          >, a Python classifier that predicts which unread books I’ll actually read.
+        </li>
+      </ul>
+      <p>You can find the rest of my repos on GitHub above.</p>
+    </main>
+
+    <footer>© 2025 William Jewers</footer>
   </div>
   <script src="javascripts/scale.fix.js"></script>
 </body>
 </html>
-
-<!-- Work, Projects, Pages, Contact, Startup Advisory - GTM & Product, CV, Academia, Thoughts, Socials, Bookshelf, My Tech Stack, Products, Questions, Resources, Timeline, Obsidian, HPMOR, Fun Things - built the EYP wiki, rom com reviews-->
-<!-- TODO: Google Analytics, Hotjar -->
