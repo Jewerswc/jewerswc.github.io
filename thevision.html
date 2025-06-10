@@ -1,50 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Vision - Blog</title>
-  <link rel="stylesheet" href="blog.css">
-  <!-- Other CSS links -->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>The Vision – William Jewers</title>
+
+  <!-- FontAwesome for socials -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    /* — Base reset & typography — */
+    body {
+      margin: 0;
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #111;
+      line-height: 1.6;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* — Container — */
+    .container {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    /* — Header / title — */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-family: Menlo, Monaco, "Courier New", monospace;
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin: 0;
+    }
+    header h1 a.home-link {
+      color: inherit;
+      text-decoration: none;
+      display: inline-block;
+    }
+    header h1 a.home-link:hover {
+      text-decoration: underline;
+    }
+
+    /* — Navigation links — */
+    nav {
+      font-size: 0.95rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+
+    /* — Social icons — */
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+    .social-icons a {
+      margin-left: 0.75rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    /* — Article content — */
+    main p {
+      margin-bottom: 1rem;
+    }
+    main ul {
+      margin: 1rem 0;
+      padding-left: 1.2rem;
+    }
+    main li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* — Footer — */
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="wrapper">
+  <div class="container">
     <header>
-      <h3><p class="view"><a href="home.html">Home</a></p></h3>
-      <h3><p class="view"><a href="work.html">Work</a></p></h3>
-      <h3><p class="view"><a href="blog.html">Blog</a></p></h3>
-      <br>
+      <div>
+        <h1>
+          <a href="blog.html" class="home-link">
+            What is the vision for Interesting Or Not?
+          </a>
+        </h1>
+      </div>
     </header>
-    <div class="blog-content">
-      <section>
-        <h2>What is the vision for Interesting Or Not?</h2>
-        <p>When I was 21 I was working in politics, and with politics comes the media.</p>
-        <p>At that time though I was reading lots of blogs. The authors of those blogs were the smartest people that I had come across. In some wordly (and perhaps indefinable) sense they were much smarter than the people at university. That's besides the point, though. Much smarter than traditional newspaper columnists, too. Slate Star Codex, Tim Gowers, Dominic Cummings, Steve Hsu, LessWrong, Paul Graham were just some. It was like unearthing the secret of where all the smart people were.</p>
-        <p>I could also see that politics was going south and pretty quickly. But I was interested in all these smart people who were keen to solve hard problems and build cool things, unlike the vast majority of politicians.</p> 
-        <p>I also thought it was pretty odd that most people had never heard of these smart people, yet they had heard of all the newspaper columnists who by comparison were fools simply spreading the latest popular meme.</p>
-        <p>So, I wrote to one of them on their Substack, and asked for advice. They replied and said (with great foresight for 2020) that I should learn to code, and work on cool projects that I find interesting. At the time this seemed like fairly abstract advice, but I did it, nonetheless. </p>
-        <p>So I learned to code did a few of my own projects, and sometime after I got interested in startups. Their blog, their writing, and them responding to me on their blog gave me an 'aha' moment that changed my life. </p>
-        <p>I started my startup in July 2024. I wanted more people to have more great content, like the blog that gave me an 'aha' moment, and meant that I'd learn to code, get interested in startups, and ultimately change my course.</p>
-        <p>For a while, I thought that meant well we should make it easier for as many people as possible to write, earn, and get reach for their content.</p>
-        <p>That as a hypothesis though had a few fundamental issues. The first problem you might call the 'cold start' problem. Why do I want to be the first person to read - let alone pay for - the first piece of writing someone has done? And, will they actually be any good the first time around? It's probably just a truth that you can't hack the adoption curve of things, no matter how hard you try.</p>
-        <p>Secondly, and perhaps above all else, there was a big elephant in the room - AI. LLMs seemed to dominate startup discussion. I'd always had in my head that I was betting on the human experience, and the human capacity to write great stuff, and against LLMs. I knew it was a risk.</p>
-        <p>The funny thing was that when I first got people using the platform they used LLMs to write things. And at this time, we saw a steep improvement, with o1-mini, o1, Deepseek's R1, and o3-mini.</p>
-        <p>So I thought what if you could create AI-personas that could write like humans, but were smarter and faster to adapt. This seemed to have several benefits that my old model about how to solve the problem fell short on:</p>  
-        <ul>
-          <li>More content that was better smarter and faster to adapt what readers want</li>
-          <li>Larger profit margins. We'd no longer have to pay out 80% of our reader revenue to writers. That, from a financial standpoint, was a huge win.</li>
-          <li>Multimodality, all of a sudden, what went from a 'writing platform' went to a platform that could have writers, artists, video creators and more. The only limtiation is the AI.</li>
-          <li>Agency: more writers (or indeed content creators) that can do more things more quickly. We can have content creators that can do things far beyond just writing. What about having an AI doing real human interviews and more of them - and what if they could organise it all by themself. That is the potential.</li>
-        </ul>
-        <p>So if you were to ask me 'what is the vision for Interesting Or Not?', I guess I would respond with this: the place where more people are able to have their 'aha' moments more of the time by distilling the knowledge and wisdom of people and ideas for them.</p>
-       <p>What that menans in concrete terms is the place where AI agents write the 'everything magazine', where you have every blog or video or podcast that you ever wanted to read watch or listen to - or perhaps didn't even know you wanted. That is the promise of Interesting Or Not.</p>
 
+    <main>
+      <p>When I was 21 I was working in politics, and with politics comes the media.</p>
+      <p>
+        At that time I was reading lots of blogs by the smartest people I'd ever
+        encountered—far outshining university academics or traditional columnists.
+        Slate Star Codex, Tim Gowers, Dominic Cummings, Steve Hsu, LessWrong,
+        Paul Graham… it felt like discovering where all the real thought leaders lived.
+      </p>
+      <p>
+        I also noticed that most people had never heard of them, yet they knew
+        every newspaper pundit out there. So I reached out on Substack for advice.
+        In 2020 they told me: “Learn to code, and build things that interest you.”
+        I did.
+      </p>
+      <p>
+        Coding led me to startups and eventually to writing this platform. A single
+        “aha” moment in a blog comment thread changed my trajectory—so I started
+        Interesting Or Not in July 2024 to create more of those moments for everyone.
+      </p>
+      <p>
+        Early on I hypothesized: make it easy for anyone to write and earn. But I
+        hit two walls:
+      </p>
+      <ul>
+        <li>
+          <strong>Cold start:</strong> Why read or pay for an untested first draft?
+        </li>
+        <li>
+          <strong>AI elephant:</strong> LLMs were everywhere, and my bet on human
+          writers felt risky.
+        </li>
+      </ul>
+      <p>
+        The twist? Users began leveraging LLMs themselves—o1-mini, o1, Deepseek’s
+        R1, o3-mini—and the quality skyrocketed. I realized: what if AI personas
+        could write like humans, but smarter and quicker to adapt?
+      </p>
+      <ul>
+        <li>More—and better—content, tuned instantly to reader feedback.</li>
+        <li>Higher margins: no more 80% revenue share to human writers.</li>
+        <li>
+          True multimodality: text, art, video, interviews—everything generated
+          by agents.
+        </li>
+        <li>
+          Agency at scale: AI agents that self-manage interviews, research,
+          publication and more.
+        </li>
+      </ul>
+      <p>
+        So if you ask, “What is the vision for Interesting Or Not?”: it’s the
+        place where every person can have more life-changing “aha” moments, by
+        distilling the world’s ideas into an intuitive, AI-powered curatorial
+        magazine—a personalized “everything magazine” of blogs, videos, and
+        podcasts you need (or never knew you needed).
+      </p>
+    </main>
 
-
-
-      </section>
-    </div>
+    <footer>© 2025 William Jewers</footer>
   </div>
+
   <script src="javascripts/scale.fix.js"></script>
 </body>
 </html>

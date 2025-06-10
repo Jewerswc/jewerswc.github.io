@@ -1,37 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Making Something People Want - Blog</title>
-  <link rel="stylesheet" href="blog.css">
-  <!-- Other CSS links -->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Making Something People Want – William Jewers</title>
+
+  <!-- FontAwesome for socials -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    /* — Base reset & typography — */
+    body {
+      margin: 0;
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #111;
+      line-height: 1.6;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* — Container — */
+    .container {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    /* — Header / title — */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-family: Menlo, Monaco, "Courier New", monospace;
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin: 0;
+    }
+    header h1 a.home-link {
+      color: inherit;
+      text-decoration: none;
+      display: inline-block;
+    }
+    header h1 a.home-link:hover {
+      text-decoration: underline;
+    }
+
+    /* — Navigation links — */
+    nav {
+      font-size: 0.95rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+
+    /* — Social icons — */
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+    .social-icons a {
+      margin-left: 0.75rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    /* — Article content — */
+    main h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 0;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+
+    /* — Footer — */
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="wrapper">
+  <div class="container">
     <header>
-      <h3><p class="view"><a href="home.html">Home</a></p></h3>
-      <h3><p class="view"><a href="work.html">Work</a></p></h3>
-      <h3><p class="view"><a href="blog.html">Blog</a></p></h3>
-      <br>
+      <div>
+        <h1>
+          <a href="blog.html" class="home-link">
+            Am I making something that people don't want?
+          </a>
+        </h1>
+
+      </div>
+
     </header>
-    <div class="blog-content">
-      <section>
-          <h2>Am I making something that people don't want (or at least not yet)</h2>
-          <p>The core mantra of YC is <strong>‘make something that people want’</strong>. Their recipe for doing that is twofold. First, write code, and then, second, talk to users. Seems simple right?
-            </p>
-            <p>There is a great photo that I saw maybe a year back of products that are sleek, well designed, and elegant, but its a push to tell what they really are or do. In the worst case of those examples you see photos of products that solve trivial problems.
-              
-              (As a side note, ChatGPT is the anti-thesis of this. It helped me find, not the exact picture, but this instead: https://www.boredpanda.com/awesome-but-absolutely-useless-things/). The idea is that if you can solve a problem, even albeit for a small number of people, and create 'a small but intense fire' then you might be well on the way.</p>
-          <p>The brick and fire analogy is often used to stretch out the meaning of this. If your hair was on fire and only a brick was around, would you a) use the brick to put the fire out, or b) let your hair burn. Most, its probably safe to assume, would use the brick, despite it being bad at putting out fires. The same goes for software. If the alternative is nothing or so incredibly bad, then you’ll use the software equivalent of a brick to solve a problem. So even if what you build is janky, has problems, but its the only thing available, people will use it.</p>
-       <p>The question that I come back to with Interesting Or Not, then is what fire is this brick putting out? I guess maybe to put it in really face value terms, I want more (much more) smart multi-modal content (written, audio, video) content that is shorter than a book, but longer than twitter posts which teach me stuff - and which give me an ‘aha’ moment. I had a really life changing experience (documented well elsewhere) of where an aha moment from this kind of content did change my life.</p>
-      <p>I want more of it, I want more great content that alters my mental model(s) of things. At the moment I use Youtube, Substack (but only occasionally) a range of habitual podcasts and other places to do this.</p>  
-      <p>I suppose when I really try and empty my brain and understand what I'm doing here, I can't really (yet at least) define it in brick or no-brick absolutes. Its more of a spectrum. One that will improve over time. On one end of that spectrum sits the idea that there is no smart content (no content at all, perhaps) for people. No aha moments, no bits of information distributed to them that are potentially life changing. On the other end of that spectrum, is the possibility there is more life changing blogs, podcasts, videos than one could ever consume.</p> <p>More ideas, opportunities, etc. than we could ever realistically take-up. Perhaps despite what people think that with the internet allowing for the ubiquity of information, I think we're still on the former side of that spectrum. The underlying mission of Interesting Or Not is to bring us to the other side of that spectrum. You have every blog, podcast, (one day video) that you could ever dream or wish for. And its made by something that you feel intuitively gets you and what your interested in and about.</p>
-      <p>The real endpoint of AI is a long way off. Sketching at least analytically in my own head what it means for Interesting Or Not is important though. It helps me, and I hope you, understand how far I can take the mission of Interesting Or Not: to give more people those 'aha' moments where two nodes in their mental model of the world (or maybe even one day the physical world) connect. And, from then on they are stronger and more powerful. They are something they weren't yesterday. If we could have more of that, more of the time, we might all just a bit richer.</p>
-      <p>I think an interesting thing to consider is what were doing from an really physics based/first principles perspective. If it is all about connecting nodes in a mental model graph, then we would presumably want to do that as efficently as possible. I would guess that something like Twitter/X is well disposed towards this. The idea of transferring as much useful information as possible in as few a short characters/words as possible. Maximum information, minimum length. Is there a chance that as we get more knowledge about the world than we are ever able to know, that this will be the ideal scenario for knowledge exchange etc. But that seems unrealistic to assume that's all we want, we're not after all cold, rationalistic, analytical creatures all of the time.</p>
-    </section>
-    </div>
+
+    <main>
+      <p>
+        The core mantra of YC is <strong>“make something that people want.”</strong>
+        Their recipe is two-step: code first, then talk to users.
+      </p>
+      <p>
+        I once saw a gallery of sleek, elegant products that solved trivial
+        problems—or none at all. (ChatGPT is the anti-thesis of that; it helped
+        me find this instead:
+        <a href="https://www.boredpanda.com/awesome-but-absolutely-useless-things/"
+           target="_blank"
+           >Awesome but Absolutely Useless Things</a
+        >.) The lesson: even a “brick” that solves a tiny fire is better than no
+        tool at all.
+      </p>
+      <p>
+        The brick-and-fire analogy asks: if your hair’s ablaze and only a brick
+        is nearby, would you: a) use the brick, or b) let your hair burn? Most
+        would grab the brick—even if it sucks at firefighting. Software is the
+        same: if the alternative is nothing, people will adopt your janky MVP.
+      </p>
+      <p>
+        So what fire is Interesting Or Not putting out? I want more smart,
+        multimodal content—shorter than a book, longer than a tweet—that sparks
+        real “aha” moments. I’ve had those moments change my life, and I want
+        more of them.
+      </p>
+      <p>
+        Today I’m using YouTube, Substack (sparingly), podcasts, and more to
+        chase those sparks. Interesting Or Not aims to unite all great blogs,
+        podcasts, and (one day) videos under a single intuitive AI curator.
+      </p>
+      <p>
+        The real AI endpoint is far off, but sketching it helps us focus:
+        connecting mental-model nodes in the most efficient way. Twitter/X
+        maximizes info density; maybe that’s part of the future. But we aren’t
+        purely analytical creatures. We need depth and surprise, too.
+      </p>
+      <p>
+        If we can amplify those “aha” connections—where two nodes link and
+        leave us stronger—then we’re onto something. More sparks, more growth,
+        more of us just a bit richer.
+      </p>
+    </main>
+
+    <footer>© 2025 William Jewers</footer>
   </div>
+
   <script src="javascripts/scale.fix.js"></script>
 </body>
 </html>
