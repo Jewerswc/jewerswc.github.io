@@ -83,13 +83,29 @@
       margin-bottom: 0.5rem;
     }
 
-    /* — footer — */
     footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-      margin-top: 4rem;
-    }
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 4rem;
+}
+
+footer .footer-nav {
+  margin-bottom: 1.5rem;      /* little space above copyright */
+}
+
+footer .footer-nav a {
+  margin: 0 1.75rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+footer .footer-nav a:hover {
+  text-decoration: underline;
+}
+
   </style>
 </head>
 
@@ -98,11 +114,7 @@
     <header>
       <div>
         <h1>William Jewers</h1>
-        <nav>
-          <a href="https://jewerswc.github.io/home.html">Home</a>
-          <a href="https://jewerswc.github.io/work.html">About</a>
-          <a href="https://jewerswc.github.io/blog.html">Blog</a>
-        </nav>
+
       </div>
       <div class="social-icons">
         <a href="https://twitter.com/WilliamJewers" target="_blank">
@@ -181,7 +193,13 @@
       <p>You can find the rest of my repos on GitHub above.</p>
     </main>
 
-    <footer>© 2025 William Jewers</footer>
+    <footer>
+      <nav class="footer-nav">
+        <a href="https://jewerswc.github.io/home.html">Home</a>
+        <a href="https://jewerswc.github.io/work.html">About</a>
+        <a href="https://jewerswc.github.io/blog.html">Blog</a>
+      </nav>
+      © 2025 William Jewers</footer>
   </div>
   <script src="javascripts/scale.fix.js"></script>
 </body>
