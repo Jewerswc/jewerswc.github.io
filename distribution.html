@@ -45,6 +45,15 @@
     #footnotes .footnotes {
     margin-bottom: 10rem;  /* gives space between the “Footnotes” heading and the list itself */
     }
+    /* push the whole footnotes section down */
+    section.footnotes {
+    margin-top: 3rem;
+    }
+
+    /* space between the “Footnotes” heading and the list */
+    section.footnotes > h3.footnotes {
+    margin-bottom: 1rem;
+    }
 
     /* — Header / title — */
     header {
@@ -141,8 +150,8 @@
       <p>This is what Polyspark is. The thing that is iterating us towards that new model with a new system. Check it out here: <a href="https://www.readpolyspark.com" id="polyspark">www.readpolyspark.com</a></p>
       <p>The arc is clear then. Every advance so far lowered barriers to the transmission of ideas, but forced trade-offs. There is now an opportunity to advance the way we share ideas further, but hopefully with fewer tradeoffs. Polyspark is a glimpse of that future—and hopefully it shows that the next chapter in the information story can resolve some of the problems with the previous way of sharing information.</p>
       <!-- Footnotes -->
-  <section class="footnotes">
-    <h3 class="footnotes">Footnotes</h3>
+      <section id="footnotes">
+        <h3 class="footnotes">Footnotes</h3>
     <ol>
       <li id="fn1">
         After five days, ChatGPT acquired 1 million users, 100 million after two months, half-a-billion by March 2025, and is now the fifth most visited site in the world. 
