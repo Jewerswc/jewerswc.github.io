@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #111;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+main p {
+  margin-bottom: 1.1rem;
+}
+
+main ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+main li {
+  margin-bottom: 0.5rem;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.site-title a {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: inherit;
+}
+
+.site-title a:hover {
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.social-icons a {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Portrait on home */
+.portrait {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portrait img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Blog index */
+.post-list {
+  padding-left: 1.2rem;
+}
+
+.post-list li {
+  margin: 0.6rem 0;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer-nav {
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav a {
+  margin: 0 1.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Simple responsiveness */
+@media (max-width: 640px) {
+  .container {
+    margin: 2rem auto;
+  }
+
+  .site-header {
+    align-items: flex-start;
+  }
+
+  .footer-nav a {
+    margin: 0 0.75rem;
+  }
+}
+

@@ -1,121 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>William Jewers</title>
+---
+layout: default
+description: "Founder of Polyspark; writing, projects, and contact."
+---
 
-  <!-- fonts & icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+<div class="portrait">
+  <img src="IMG_3288 3.jpeg" alt="Portrait of William Jewers"/>
+</div>
 
-  <!-- minimal layout CSS -->
-  <style>
-    /* --- reset & base --- */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      color: #333;
-      line-height: 1.6;
-      background: #fff;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+<p>
+  My name is William. I founded
+  <a href="https://readpolyspark.com" target="_blank" rel="noopener">Polyspark</a>,
+  an AI blogging platform where anyone can create AI personas that publish posts,
+  driven by their system prompts.
+</p>
+<p>
+  I’ve got a degree in philosophy and politics, but I taught myself to code and
+  have done some coding
+  <a href="{{ '/work.html' | relative_url }}">things</a>, which I find interesting.
+  I also like to write; you can find where I do it
+  <a href="{{ '/blog.html' | relative_url }}">here</a>.
+</p>
 
-    /* --- container --- */
-    .container {
-      max-width: 600px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-      position: relative;
-    }
-
-    /* --- header --- */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 2rem;
-    }
-    header h1 {
-      font-family: Menlo, Monaco, "Courier New", monospace;
-      font-size: 1.2rem;
-      font-weight: 500;
-      margin: 0;
-    }
-    .social-icons {
-      display: flex;
-      gap: 0.75rem;
-    }
-    .social-icons a {
-      font-size: 1.2rem;
-      color: #333;
-    }
-
-    /* --- portrait --- */
-    .portrait {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .portrait img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 4px;
-    }
-
-    /* --- paragraphs & footer --- */
-    p {
-      margin-bottom: 1.25rem;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #999;
-      margin-top: 4rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>William Jewers</h1>
-      <div class="social-icons">
-        <a href="https://twitter.com/WilliamJewers" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/williamcjewers" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/jewerswc" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-    </header>
-
-    <div class="portrait">
-      <img src="IMG_3288 3.jpeg" alt="William Jewers portrait"/>
-    </div>
-
-    <p>
-      My name is William. I founded
-      <a href="https://readpolyspark.com" target="_blank">Polyspark</a>,
-      an AI blogging platform where anyone can create AI personas that publish posts, driven by their system prompts.
-    
-    </p>
-    <p>
-      I’ve got a degree in philosophy and politics, but I taught myself to code and have done some interesting coding
-      <a href="/work">things</a>.
-
-      I also like to write; you can find where I do it
-      <a href="https://jewerswc.github.io/blog.html">here</a>.
-
-    </p>
-
-    <footer>© 2025 William Jewers</footer>
-  </div>
-</body>
-</html>
