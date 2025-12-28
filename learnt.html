@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>What I learnt this year – William Jewers</title>
+
+  <!-- FontAwesome for socials -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    /* — Base reset & typography — */
+    body {
+      margin: 0;
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #111;
+      line-height: 1.6;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* — Container — */
+    .container {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    #footnotes {
+      margin-top: 3rem;
+    }
+
+    #footnotes .footnotes {
+      margin-top: 10rem;
+    }
+
+    section.footnotes {
+      margin-top: 3rem;
+    }
+
+    section.footnotes > h3.footnotes {
+      margin-bottom: 0rem;
+    }
+
+    /* — Header / title — */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-family: Menlo, Monaco, "Courier New", monospace;
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin: 0;
+    }
+    header h1 a.home-link {
+      color: inherit;
+      text-decoration: none;
+      display: inline-block;
+    }
+    header h1 a.home-link:hover {
+      text-decoration: underline;
+    }
+
+    /* — Navigation links — */
+    nav {
+      font-size: 0.95rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+
+    /* — Social icons — */
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+    .social-icons a {
+      margin-left: 0.75rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    /* — Article content — */
+    main p {
+      margin-bottom: 1rem;
+    }
+    main ul {
+      margin: 1rem 0;
+      padding-left: 1.2rem;
+    }
+    main li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* — Footer — */
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>
+          <a href="blog.html" class="home-link">
+            What I learnt this year
+          </a>
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <p>It’s been more than a full calendar year now of working on a startup: failing, pivoting, designing, writing code, doing sales, and talking to users. I’ve learnt a lot, and I wanted to write down a few of the things that have stuck.</p>
+
+      <p><strong>Failing</strong></p>
+      <p>The fear of failing doesn’t go away; it changes shape. At the start, I was scared I’d fail in the most basic way: that deciding to do a startup at all was naïve, that it was a silly thing, and that people would ridicule me for it. That fear made failure feel inevitable, almost as if the attempt itself was proof I’d already lost.</p>
+      <p>What I’ve come to realise is that failure is, in large part, a decision. In a very practical sense. You can decide to do the uncomfortable things required to find out whether what you’re working on will work. Or you can avoid them and drift. The drift looks like “progress” for a while, but it’s just delayed information.</p>
+
+      <p><strong>Sheer will</strong></p>
+      <p>A lot of things happen because you make them happen. There’s a specific kind of effort that feels almost crude - push something, push it again, then push it harder - and it works surprisingly often. And when it does work it typically works well. You can do things simply because the situation requires you to, and because you refuse to accept that “no” is the final state.</p>
+      <p>That kind of will is useful everywhere: getting meetings, moving a deal forward, iterating a design, shipping a feature that feels just beyond you. Sometimes you get rejected. But when you do, it’s usually easier than you think to dust yourself off and move on to the next thing.</p>
+
+      <p>A corollary of this: people are willing to talk to you.</p>
+      <p>They’ll take a meeting. They’ll explain how they do X, Y, or Z. It’s rarely as scary as it looks in your head. People are often nicer and more tolerant than you expect. There is rejection, and people ghost more often than I’d like to admit, but if you treat them well they generally reciprocate.</p>
+
+      <p><strong>AI progress: real, but not magic</strong></p>
+      <p>AI has moved to roughly where we thought it would - but not much further. This sounds unintuitive, because a year ago there was a huge amount of hype around “reasoning models” and what continual scaling would unlock. There was an implicit expectation that progress would accelerate, that there would be another rabbit pulled out of the research hat - something that changed the game again.</p>
+      <p>That hasn’t happened. Models have improved and become normalised. They’re good. But they haven’t leapt far beyond what you’d expect from steady progress rather than a discontinuity.</p>
+
+      <p><strong>Things take time</strong></p>
+      <p>Your timeline is not everyone else’s timeline. You can feel ready to ship, to sell, to onboard while the other person is still in the “I’m not even sure I want to think about this yet” phase. Some things only move at the speed of trust, habit, and institutional reality. Pushing helps, but so does learning when to wait, when to follow up, and when to stop pretending that urgency is persuasive.</p>
+
+      <p><strong>Design and quality really matter</strong></p>
+      <p>I started last year working on Polyspark, beginning properly in September 2024 and spent a lot of time (roughly September to March/April) building infrastructure. My working assumption was simple: if the models get better and we build the platform, our bet on “writing agents” will come good.</p>
+      <p>I still think that may be true. What I had to concede is that I wasn’t well placed to distribute that product. Maybe that’s unfair on myself, but I realised I’d need to learn how to sell something to people I didn’t even know existed. I didn’t know where demand lived, or how to reach it.</p>
+      <p>What I did know is that I can design great software, build it, and put it in front of people. I’d spent months learning exactly that: backend, frontend, Figma, and—more importantly—taste. How things fit together. How to make something feel coherent. How to build in a way that shows deep sympathy for the user.</p>
+      <p>It’s easy to ship something functional and declare it “done”. I’ve found that’s nearly always wrong. At “functional”, you’re only at the start.</p>
+      <p>From there you have to use it, take it apart, put it back together. Return with new Figma designs. Implement them. Feel where they’re still wrong. Repeat. And repeat. And repeat. Kari from Linear calls it “the search”. That phrase captures it well: it’s not a linear march, it’s exploration—and it’s genuinely rewarding.</p>
+
+      <p><strong>Market matters more</strong></p>
+      <p>Another thing I’ve learnt is the difference between real market pull and people being nice. It’s not always easy to tell the difference in the moment.</p>
+      <p>Mike Reader’s office, for example, was initially interested. They wanted a better AI tool for casework. But they didn’t want to be the guinea pig, which is completely fair. Interest is not adoption. Warm words are not usage. You only really learn what “pull” is when someone commits time, attention, and reputation to using what you’ve built.</p>
+
+      <p><strong>Learning by doing beats learning by consuming</strong></p>
+      <p>More broadly: what you learn is what you learn, and you learn it by doing.</p>
+      <p>When I sat with Fred, some of the feedback was brutal. It was also incredibly useful. It clarified what he actually cared about versus what I cared about. People debate “vision-led” startups versus “talk to users and iterate” startups, but in practice it often collapses into a simpler rule: do what works.</p>
+      <p>It’s also made me more sceptical of treating reading as the primary source of wisdom. Paul Graham essays and Peter Thiel videos are interesting in the way history documentaries are interesting. They can be valuable, but they can also be a form of procrastination: they make you feel like you’re getting better at startups without necessarily moving you closer to a successful one.</p>
+      <p>They’re nice to watch and they make you think. But they don’t, on their own, move you any closer to a startup that works.</p>
+
+      <!-- Footnotes (kept for layout parity; empty unless you add references) -->
+      <section id="footnotes">
+        <h3 class="footnotes">Footnotes</h3>
+        <ol></ol>
+      </section>
+    </main>
+
+    <footer>© 2025 William Jewers</footer>
+  </div>
+</body>
+</html>
