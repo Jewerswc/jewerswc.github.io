@@ -1,59 +1,156 @@
 ---
 layout: default
-title: "About"
-description: "Background, projects, and previous work by William Jewers."
+title: "Work"
+page_key: work
+body_class: work-page
+description: "Current work, projects, and background by William Jewers."
 ---
 
-<h2>What I do / What I’ve done</h2>
+<div class="stack">
+  <section class="section-block" aria-labelledby="work-intro">
+    <p class="eyebrow">Work</p>
+    <h1 class="page-intro" id="work-intro">
+      Current work, relevant background, and selected projects.
+    </h1>
+    <p class="section-intro">
+      I’m a founder and self-taught builder. The work that suits me best tends to sit
+      where software, institutions, and judgment-heavy workflows meet.
+    </p>
+  </section>
 
-<h3>What I do</h3>
-<p>
-  I’m building
-  <a href="https://parlyreply.com" target="_blank" rel="noopener">Parlyreply</a>,
-  an AI-native CX platform for the public sector.
-</p>
-<p>
-  Last year, I completed Durham University’s Venture Lab accelerator (Jul–Sep 2024),
-  receiving £2,500 in grant funding to work on a startup idea.
-</p>
+  <section class="section-block" aria-labelledby="work-current">
+    <div>
+      <p class="eyebrow">Current work</p>
+      <h2 class="section-title" id="work-current">Building ParlyReply</h2>
+      <p class="section-intro">
+        I’m building
+        <a href="https://parlyreply.com" target="_blank" rel="noopener">ParlyReply</a>,
+        an AI-native CX platform for the public sector. More broadly, I’m interested
+        in products that reduce institutional friction and make complex service
+        workflows more usable.
+      </p>
+    </div>
 
-<h3>What I’ve done</h3>
-<p>Before I got interested in startups and coding, I did some other things.</p>
-<p>
-  From 18–24 I intermittently worked in the UK House of Commons as a researcher. During my time in that role, I worked on several coding projects and got interested in startups.
-</p>
-<p>
-  I hold a BA in Philosophy &amp; Politics (Durham ’23). During my degree I
-  looked at Edmund Burke’s rhetoric in
-  <a href="{{ '/Burke.html' | relative_url }}" target="_blank" rel="noopener">
-    Burke’s Three Doctrines And The French English Question Of Reflections</a>.
-</p>
-<p>I’ve also taught myself to code and built the following projects (most recent first):</p>
+    <div class="two-column">
+      <article class="surface-card">
+        <div class="surface-meta">Operating model</div>
+        <h3>Product, design, and code</h3>
+        <p>
+          I like working across the full stack, especially when the product needs
+          repeated design and implementation loops to feel right.
+        </p>
+      </article>
+      <article class="surface-card">
+        <div class="surface-meta">Recent signal</div>
+        <h3>Durham Venture Lab</h3>
+        <p>
+          I completed Durham University’s Venture Lab accelerator from July to
+          September 2024 and received £2,500 in grant funding to work on a startup
+          idea.
+        </p>
+      </article>
+    </div>
+  </section>
 
-<ul>
-  <li>
-    <a href="https://legocharacters.com" target="_blank" rel="noopener">legocharacters.com</a> — a site that turns any image into a LEGO-style scene.
-  </li>
+  <section class="section-block" aria-labelledby="work-background">
+    <div>
+      <p class="eyebrow">Relevant background</p>
+      <h2 class="section-title" id="work-background">Politics, research, then software</h2>
+      <p class="section-intro">
+        Before startups and product work took over, I spent several years in and
+        around British politics. That period shaped how I think about institutions,
+        communication, and the practical constraints real systems operate under.
+      </p>
+    </div>
 
-  <li>
-    <strong>Polyspark</strong> — an AI-powered long-form writing platform built around adaptive writer agents.
-  </li>
+    <div class="two-column">
+      <article class="surface-card">
+        <div class="surface-meta">Public institutions</div>
+        <h3>House of Commons researcher</h3>
+        <p>
+          From 18 to 24 I intermittently worked in the UK House of Commons as a
+          researcher. It was there that I started building small tools and got more
+          serious about software and startups.
+        </p>
+      </article>
+      <article class="surface-card">
+        <div class="surface-meta">Education</div>
+        <h3>Philosophy and politics</h3>
+        <p>
+          I hold a BA in Philosophy &amp; Politics from Durham University (2023). My
+          dissertation looked at Edmund Burke’s rhetoric in
+          <a href="{{ '/Burke.html' | relative_url }}" target="_blank" rel="noopener">
+            Burke’s Three Doctrines And The French English Question Of Reflections
+          </a>.
+        </p>
+      </article>
+    </div>
+  </section>
 
-  <li>
-    A news-classification project inspired by an idea from 
-    <a href="https://x.com/paulg/status/1750493486397190617" target="_blank" rel="noopener">Paul Graham</a>, 
-    and related to work by 
-    <a href="https://x.com/karpathy/status/1998803709468487877" target="_blank" rel="noopener">Andrej Karpathy</a>, 
-    exploring hindsight analysis, forward prediction models, and spam filtering.
-  </li>
+  <section class="section-block" aria-labelledby="work-projects">
+    <div>
+      <p class="eyebrow">Selected projects</p>
+      <h2 class="section-title" id="work-projects">Projects that show how I think</h2>
+      <p class="section-intro">
+        These are not all the same kind of product, but they each show a useful part
+        of the picture: shipping, experimentation, interface taste, and a bias toward
+        building tools that are actually usable.
+      </p>
+    </div>
 
-  <li>
-    <a href="https://github.com/Jewerswc/Booksorter" target="_blank" rel="noopener">Booksorter</a> — a Python classifier that predicts which unread books I’m likely to actually read.
-  </li>
+    <div class="work-grid">
+      <article class="work-card">
+        <h3><a href="https://legocharacters.com" target="_blank" rel="noopener">legocharacters.com</a></h3>
+        <p>
+          A consumer web product that turns any image into a LEGO-style scene; useful
+          as proof that I like shipping internet products, not just talking about them.
+        </p>
+      </article>
+      <article class="work-card">
+        <h3>Polyspark</h3>
+        <p>
+          An AI-powered long-form writing platform built around adaptive writer agents,
+          and a serious exercise in product design around generative systems.
+        </p>
+      </article>
+      <article class="work-card">
+        <h3>News classification project</h3>
+        <p>
+          A project inspired by Paul Graham and adjacent to work discussed by Andrej
+          Karpathy, exploring hindsight analysis, forward prediction models, and spam
+          filtering for news signals.
+        </p>
+      </article>
+      <article class="work-card">
+        <h3><a href="https://github.com/Jewerswc/Booksorter" target="_blank" rel="noopener">Booksorter</a></h3>
+        <p>
+          A Python classifier that predicts which unread books I’m actually likely to
+          read, built as a small but concrete ranking problem.
+        </p>
+      </article>
+      <article class="work-card">
+        <h3>Flood-zone mapping tool</h3>
+        <p>
+          A property-risk mapping project designed to identify homes with meaningful
+          exposure to flooding.
+        </p>
+      </article>
+    </div>
+  </section>
 
-  <li>
-    A flood-zone mapping tool designed to identify properties at risk of flooding.
-  </li>
-</ul>
+  <section class="section-block" aria-labelledby="work-more">
+    <div>
+      <p class="eyebrow">Elsewhere</p>
+      <h2 class="section-title" id="work-more">The rest of the trail</h2>
+      <p class="section-intro">
+        If you want the longer version of what I think about, go to the writing. If
+        you want the wider set of things I’ve built, GitHub is the quickest route.
+      </p>
+    </div>
 
-<p>You can find the rest of my projects on GitHub above.</p>
+    <div class="button-row">
+      <a class="button-link is-primary" href="https://github.com/jewerswc" target="_blank" rel="noopener">View GitHub</a>
+      <a class="button-link" href="{{ '/blog.html' | relative_url }}">Read writing</a>
+    </div>
+  </section>
+</div>

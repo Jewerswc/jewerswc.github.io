@@ -1,165 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>What I learnt this year – William Jewers</title>
+---
+layout: default
+title: "What I learnt this year"
+description: "Notes from a year of building, selling, shipping, and adjusting."
+page_key: writing
+body_class: essay-page
+og_type: article
+date: 2026-02-15
+---
 
-  <!-- FontAwesome for socials -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+<article class="essay">
+  <a class="article-backlink" href="{{ '/blog.html' | relative_url }}">
+    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+    <span>Back to writing</span>
+  </a>
 
-  <style>
-    /* — Base reset & typography — */
-    body {
-      margin: 0;
-      font-family:
-        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      color: #111;
-      line-height: 1.6;
-    }
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+  <header class="essay-header">
+    <h1 class="essay-title">{{ page.title }}</h1>
+    <div class="essay-meta">{{ page.date | date: "%B %-d, %Y" }}</div>
+  </header>
 
-    /* — Container — */
-    .container {
-      max-width: 600px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
+  <p>
+    It’s been more than a full calendar year now of working on a startup:
+    failing, pivoting, designing, writing code, doing sales, and talking to
+    users. I’ve learnt a lot, and I wanted to write down a few of the things
+    that have stuck.
+  </p>
 
-    #footnotes {
-      margin-top: 3rem;
-    }
+  <h2>Failing</h2>
+  <p>
+    The fear of failing doesn’t go away; it changes shape. At the start, I was
+    scared I’d fail in the most basic way: that deciding to do a startup at all
+    was naïve, that it was a silly thing, and that people would ridicule me for
+    it. That fear made failure feel inevitable, almost as if the attempt itself
+    was proof I’d already lost.
+  </p>
+  <p>
+    What I came to realise is that failure is, in large part, a decision. In a
+    very practical sense, you can just decide to give up, or you can decide to
+    keep going. If you keep going, you’ll likely have learnt something. If you
+    just give up, you’ll have failed by default.
+  </p>
 
-    #footnotes .footnotes {
-      margin-top: 10rem;
-    }
+  <h2>Sheer will</h2>
+  <p>
+    A lot of things happen because you make them happen. There’s a specific kind
+    of effort that feels almost crude, push something, push it again, then push
+    it harder, and it works surprisingly often, and sometimes surprisingly
+    well.
+  </p>
+  <p>
+    I found this “push the door and it will open” approach useful everywhere:
+    getting meetings, pushing deals forward, working out complex legal stuff,
+    writing code, designing. You can do it if you just push. Sometimes, of
+    course, you get rejected, but if you keep going you realise rejection is
+    normal and not something to be phased by.
+  </p>
+  <p>
+    One thing that follows from that: people are willing to talk and help. It
+    seems to be a human thing to want to help each other. It means people will
+    take a meeting. They’ll help you figure out X, Y, or Z. And it means that
+    you can start to play a long-term game with them, since you’re indebted to
+    them. It’s a great way to build meaningful relationships.
+  </p>
 
-    section.footnotes {
-      margin-top: 3rem;
-    }
+  <h2>AI progress: real, but not magic</h2>
+  <p>
+    Perhaps it was obvious in the background at the time, but much of the
+    euphoric hype around AI, LLMs in particular, in Q4 2024 and Q1 2025 was
+    overdone. The new reasoning paradigm has shifted things significantly, but
+    the full economic impact will take time to disperse across our economies.
+  </p>
 
-    section.footnotes > h3.footnotes {
-      margin-bottom: 0rem;
-    }
+  <h2>Things take time</h2>
+  <p>
+    Your timeline is not everyone else’s timeline. You can feel ready to ship,
+    to sell, to onboard while the other person is still in the “I’m not even
+    sure I want to think about this yet” phase. Some things only move at the
+    speed of trust, habit, and institutional reality. Pushing helps, but so
+    does learning when to wait, when to follow up, and when to stop pretending
+    that urgency is persuasive. Sequencing and judgement matter.
+  </p>
 
-    /* — Header / title — */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 2rem;
-    }
-    header h1 {
-      font-family: Menlo, Monaco, "Courier New", monospace;
-      font-size: 1.6rem;
-      font-weight: normal;
-      margin: 0;
-    }
-    header h1 a.home-link {
-      color: inherit;
-      text-decoration: none;
-      display: inline-block;
-    }
-    header h1 a.home-link:hover {
-      text-decoration: underline;
-    }
+  <h2>Design and quality really matter</h2>
+  <p>
+    I started last year working on Polyspark, beginning properly in September
+    2024, and spent a lot of time, roughly September to March or April,
+    building infrastructure. My working assumption was simple: if the models get
+    better and we build the platform, our bet on writing agents will come good.
+  </p>
+  <p>
+    I still think that may be true. What I had to concede is that I wasn’t well
+    placed to distribute that product. Maybe that’s unfair on myself, but I
+    realised I’d need to learn how to sell something to people I didn’t even
+    know existed. I didn’t know where demand lived, or how to reach it.
+  </p>
+  <p>
+    What I did know is that I can design great software, build it, and put it
+    in front of people. I’d spent months learning exactly that: backend,
+    frontend, Figma, and, more importantly, taste. How things fit together. How
+    to make something feel coherent. How to build in a way that shows deep
+    sympathy for the user.
+  </p>
+  <p>
+    It’s easy to ship something functional and declare it “done.” I’ve found
+    that’s nearly always the wrong way to do it. Whether something does
+    something is only the start. What matters is whether the product does what
+    people intuitively want it to do, and makes what they’re doing currently 10x
+    easier.
+  </p>
+  <p>
+    From there you have to use it, take it apart, put it back together. Return
+    with new Figma designs. Implement them. Feel where they’re still wrong.
+    Repeat. And repeat. It’s a search.
+  </p>
 
-    /* — Navigation links — */
-    nav {
-      font-size: 0.95rem;
-    }
-    nav a {
-      margin-left: 1rem;
-      font-weight: 500;
-    }
-
-    /* — Social icons — */
-    .social-icons {
-      display: flex;
-      align-items: center;
-    }
-    .social-icons a {
-      margin-left: 0.75rem;
-      font-size: 1.1rem;
-      color: #444;
-    }
-
-    /* — Article content — */
-    main p {
-      margin-bottom: 1rem;
-    }
-    main ul {
-      margin: 1rem 0;
-      padding-left: 1.2rem;
-    }
-    main li {
-      margin-bottom: 0.5rem;
-    }
-
-    /* — Footer — */
-    footer {
-      margin-top: 4rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <div>
-        <h1>
-          <a href="blog.html" class="home-link">
-            What I learnt this year
-          </a>
-        </h1>
-      </div>
-    </header>
-
-    <main>
-      <p>It’s been more than a full calendar year now of working on a startup: failing, pivoting, designing, writing code, doing sales, and talking to users. I’ve learnt a lot, and I wanted to write down a few of the things that have stuck.</p>
-
-      <p><strong>Failing</strong></p>
-      <p>The fear of failing doesn’t go away; it changes shape. At the start, I was scared I’d fail in the most basic way: that deciding to do a startup at all was naïve, that it was a silly thing, and that people would ridicule me for it. That fear made failure feel inevitable, almost as if the attempt itself was proof I’d already lost.</p>
-      <p>What I came to realise is that failure is, in large part, a decision. In a very practical sense, you can just decide to give up—or you can decide to keep going. If you keep going, you’ll likely have learnt something. If you just give up, you’ll have failed by default.</p>
-
-      <p><strong>Sheer will</strong></p>
-      <p>A lot of things happen because you make them happen. There’s a specific kind of effort that feels almost crude—push something, push it again, then push it harder—and it works surprisingly often, and sometimes surprisingly well.</p>
-      <p>I found this “push the door and it will open” approach useful everywhere: getting meetings, pushing deals forward, working out complex legal stuff, writing code, designing. You can do it if you just push. Sometimes of course you get rejected, but if you keep going you realise rejection is normal and not something to be phased by.</p>
-      <p>One thing that follows from that: people are willing to talk and help. It seems to be a human thing to want to help each other. It means people will take a meeting. They’ll help you figure out X, Y, or Z. And it means that you can start to play a long-term game with them, since you’re indebted to them. It’s a great way to build meaningful relationships.</p>
-
-      <p><strong>AI progress: real, but not magic</strong></p>
-      <p>Perhaps it was obvious in the background at the time, but much of the euphoric hype around AI (LLMs in particular) in Q4 2024/Q1 2025 was overdone. The new reasoning paradigm has shifted things significantly, but the full (economic) impact will take time to disperse across our economies.</p>
-
-      <p><strong>Things take time</strong></p>
-      <p>Your timeline is not everyone else’s timeline. You can feel ready to ship, to sell, to onboard while the other person is still in the “I’m not even sure I want to think about this yet” phase. Some things only move at the speed of trust, habit, and institutional reality. Pushing helps, but so does learning when to wait, when to follow up, and when to stop pretending that urgency is persuasive. Sequencing and judgement is important.</p>
-
-      <p><strong>Design and quality really matter</strong></p>
-      <p>I started last year working on Polyspark, beginning properly in September 2024 and spent a lot of time (roughly September to March/April) building infrastructure. My working assumption was simple: if the models get better and we build the platform, our bet on “writing agents” will come good.</p>
-      <p>I still think that may be true. What I had to concede is that I wasn’t well placed to distribute that product. Maybe that’s unfair on myself, but I realised I’d need to learn how to sell something to people I didn’t even know existed. I didn’t know where demand lived, or how to reach it.</p>
-      <p>What I did know is that I can design great software, build it, and put it in front of people. I’d spent months learning exactly that: backend, frontend, Figma, and—more importantly—taste. How things fit together. How to make something feel coherent. How to build in a way that shows deep sympathy for the user.</p>
-      <p>It’s easy to ship something functional code and declare it “done”. I’ve found that’s nearly always the wrong way to do it. Whether something does something is only the start. What matters is whether the product does what people intuitively want it to, and makes what they’re doing currently 10x easier.</p>
-      <p>From there you have to use it, take it apart, put it back together. Return with new Figma designs. Implement them. Feel where they’re still wrong. Repeat. And repeat. It’s a “search”.</p>
-
-      <p><strong>Market matters more</strong></p>
-      <p>Another thing I’ve learnt is the difference between real market pull and people being nice. It’s not always easy to tell the difference. The difference is real and maybe the most important thing.</p>
-
-  
-    </main>
-
-    <footer>© 2025 William Jewers</footer>
-  </div>
-</body>
-</html>
+  <h2>Market matters more</h2>
+  <p>
+    Another thing I’ve learnt is the difference between real market pull and
+    people being nice. It’s not always easy to tell the difference. The
+    difference is real and maybe the most important thing.
+  </p>
+</article>
