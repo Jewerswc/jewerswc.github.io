@@ -1,8 +1,8 @@
 <footer class="site-footer">
   <nav class="footer-nav" aria-label="Footer">
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/work.html' | relative_url }}">Work</a>
-    <a href="{{ '/blog.html' | relative_url }}">Writing</a>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {% endfor %}
   </nav>
   <div>© {{ 'now' | date: '%Y' }} William Jewers</div>
 </footer>

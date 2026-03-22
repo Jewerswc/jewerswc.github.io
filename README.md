@@ -5,9 +5,11 @@ The site is built as a simple GitHub Pages + Jekyll site:
 - `index.html`, `work.html`, and `blog.html` are top-level Jekyll pages using the shared layout in `_layouts/default.html`.
 - `home.html` is a legacy redirect to `/`.
 - Shared header, footer, and styles live in `_includes/header.html`, `_includes/footer.html`, and `assets/css/base.css`.
-- Long-form essays like `distribution.html`, `making.html`, `extropy.html`, `thevision.html`, and `learnt.html` are also Jekyll pages now, using `_layouts/essay.html`.
+- Long-form essays like `distribution.html`, `making.html`, and `learnt.html` are also Jekyll pages now, using `_layouts/essay.html`.
 - The writing index (`blog.html`) is generated from `_posts/`, and each post can point at a standalone essay page via `essay_url`.
 - Repeated site-wide links and contact data live in `_config.yml`.
+- Footer navigation links live in `_data/navigation.yml`.
+- Ruby/Jekyll dependencies are declared in `Gemfile`.
 
 To add a new essay:
 
@@ -42,6 +44,8 @@ GitHub Pages is built through the workflow in `.github/workflows/static.yml`, wh
 To preview the site locally with Jekyll, use:
 
 ```bash
+bundle install
+bundle exec jekyll build
 bundle exec jekyll serve
 ```
 
