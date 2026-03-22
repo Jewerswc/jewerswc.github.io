@@ -1,19 +1,11 @@
 ---
 layout: default
-page_key: writing
-body_class: writing-post-page
 ---
 
-<article class="post-shell">
-  <a class="article-backlink" href="{{ '/blog.html' | relative_url }}">
-    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-    <span>Back to writing</span>
-  </a>
-  <header class="post-header">
+<article>
+  <header>
     <h1>{{ page.title }}</h1>
-    {% if page.date %}
-      <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
-    {% endif %}
   </header>
   {{ content }}
 </article>
+

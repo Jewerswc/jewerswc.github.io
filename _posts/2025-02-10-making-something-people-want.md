@@ -2,13 +2,12 @@
 layout: post
 title: "Making Something People Want"
 description: "On fires, bricks, YC, and building Interesting Or Not."
-page_key: writing
-essay_url: /making.html
 ---
 
 <p>
   Read the full essay here:
-  <a href="{{ page.essay_url | relative_url }}">
+  <a href="{{ '/making.html' | relative_url }}">
     Am I making something that people don't want?
   </a>.
 </p>
+

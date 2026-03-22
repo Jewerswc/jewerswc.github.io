@@ -1,38 +1,19 @@
 ---
 layout: default
-title: "Writing"
-page_key: writing
-body_class: writing-page
-description: "Essays and long-form writing by William Jewers."
+title: "Blog"
+description: "Long-form essays and writing by William Jewers."
 ---
 
-<div class="stack">
-  <section class="section-block" aria-labelledby="writing-intro">
-    <p class="eyebrow">Writing</p>
-    <h1 class="page-intro" id="writing-intro">
-      Essays on AI, institutions, product building, and the way ideas spread.
-    </h1>
-    <p class="section-intro">
-      This is where I write long-form when I want to think something through
-      properly. The themes are usually technology, public systems, media,
-      markets, and progress.
-    </p>
-  </section>
-
-  <section class="writing-grid" aria-label="Essay index">
-    {% for post in site.posts %}
-      {% assign target_url = post.essay_url | default: post.url %}
-      <article class="post-card">
-        <div class="meta-line">{{ post.date | date: "%B %-d, %Y" }}</div>
-        <div>
-          <h2><a href="{{ target_url | relative_url }}">{{ post.title }}</a></h2>
-          <p>{{ post.description }}</p>
-        </div>
-        <a class="post-link" href="{{ target_url | relative_url }}">
-          <span>Read essay</span>
-          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-        </a>
-      </article>
-    {% endfor %}
-  </section>
-</div>
+<h2>Essays</h2>
+<ol class="post-list">
+  <li>
+    <a href="{{ '/distribution.html' | relative_url }}">
+      Why the distribution of ideas is going to change
+    </a>
+    </li>
+    <li> 
+    <a href="{{ '/learnt.html' | relative_url }}">
+      What I learned this year
+    </a>
+  </li>
+</ol>
