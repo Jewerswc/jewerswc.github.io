@@ -74,6 +74,37 @@ main li {
   font-weight: 500;
 }
 
+.essay {
+  max-width: 600px;
+}
+
+.essay-header {
+  margin-bottom: 2rem;
+}
+
+.essay-header h1 {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.essay-meta {
+  margin: 0.5rem 0 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.essay h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.essay #footnotes {
+  margin-top: 3rem;
+}
+
 .social-icons {
   display: flex;
   align-items: center;
@@ -139,4 +170,3 @@ main li {
     margin: 0 0.75rem;
   }
 }
-

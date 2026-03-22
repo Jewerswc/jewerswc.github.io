@@ -2,4 +2,10 @@ title: William Jewers
 description: "Personal site and writing by William Jewers."
 url: "https://jewerswc.github.io"
 baseurl: ""
-
+email: "william.jewers@gmail.com"
+company_name: "ParlyReply"
+company_url: "https://parlyreply.com"
+social:
+  twitter: "https://twitter.com/WilliamJewers"
+  linkedin: "https://www.linkedin.com/in/williamcjewers"
+  github: "https://github.com/jewerswc"

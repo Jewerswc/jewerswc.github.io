@@ -2,30 +2,47 @@ Hi my name is William and this is my personal website's codebase.
 
 The site is built as a simple GitHub Pages + Jekyll site:
 
-- `index.html`, `home.html`, `work.html`, and `blog.html` are Jekyll pages using the shared layout in `_layouts/default.html`.
+- `index.html`, `work.html`, and `blog.html` are top-level Jekyll pages using the shared layout in `_layouts/default.html`.
+- `home.html` is a legacy redirect to `/`.
 - Shared header, footer, and styles live in `_includes/header.html`, `_includes/footer.html`, and `assets/css/base.css`.
-- Long-form essays are individual HTML pages (for now) like `distribution.html`, `making.html`, `extropy.html`, and `thevision.html`.
-- The blog index (`blog.html`) is generated from lightweight Jekyll posts in `_posts/` that currently link through to those essays.
+- Long-form essays like `distribution.html`, `making.html`, `extropy.html`, `thevision.html`, and `learnt.html` are also Jekyll pages now, using `_layouts/essay.html`.
+- The writing index (`blog.html`) is generated from `_posts/`, and each post can point at a standalone essay page via `essay_url`.
+- Repeated site-wide links and contact data live in `_config.yml`.
 
 To add a new essay:
 
-1. Create an HTML page at the repo root (e.g. `my-new-essay.html`) using the same pattern as the other essay pages, or hook directly into the Jekyll layout if you prefer.
-2. Add a new post file in `_posts/` named like `YYYY-MM-DD-my-new-essay.md` with front matter:
+1. Create a page at the repo root (e.g. `my-new-essay.html`) with front matter like:
+
+   ```yaml
+   ---
+   layout: essay
+   title: "My New Essay"
+   description: "One-line summary for SEO and previews."
+   og_type: article
+   date: 2025-01-01
+   ---
+   ```
+
+2. Add the essay content below that front matter using Markdown or HTML.
+3. Add a post file in `_posts/` named like `YYYY-MM-DD-my-new-essay.md` with front matter:
 
    ```yaml
    ---
    layout: post
    title: "My New Essay"
    description: "One-line summary for SEO and previews."
+   essay_url: /my-new-essay.html
    ---
    ```
 
-3. Inside that post file, either write the full content (Markdown/HTML) or link to the standalone HTML page.
+4. Inside that post file, add a short link paragraph or excerpt. The writing index will pick it up automatically.
 
-You can preview the site locally with a simple static server (no Jekyll needed for a quick check), for example:
+GitHub Pages is built through the workflow in `.github/workflows/static.yml`, which runs a Jekyll build before deployment.
+
+To preview the site locally with Jekyll, use:
 
 ```bash
-python -m http.server 4000
+bundle exec jekyll serve
 ```
 
 and then visit `http://localhost:4000` in your browser.

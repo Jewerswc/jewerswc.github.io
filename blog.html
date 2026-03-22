@@ -1,19 +1,15 @@
 ---
 layout: default
-title: "Blog"
+title: "Writing"
 description: "Long-form essays and writing by William Jewers."
 ---
 
 <h2>Essays</h2>
 <ol class="post-list">
-  <li>
-    <a href="{{ '/distribution.html' | relative_url }}">
-      Why the distribution of ideas is going to change
-    </a>
+  {% for post in site.posts %}
+    {% assign target_url = post.essay_url | default: post.url %}
+    <li>
+      <a href="{{ target_url | relative_url }}">{{ post.title }}</a>
     </li>
-    <li> 
-    <a href="{{ '/learnt.html' | relative_url }}">
-      What I learned this year
-    </a>
-  </li>
+  {% endfor %}
 </ol>
