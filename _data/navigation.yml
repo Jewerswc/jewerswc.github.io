@@ -2,5 +2,11 @@
   url: /
 - title: Work
   url: /work.html
+- title: Projects
+  url: /projects.html
 - title: Writing
   url: /blog.html
+- title: Now
+  url: /now.html
+- title: Library
+  url: /library.html
